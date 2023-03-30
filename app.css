@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.parent{
+    background-color: rgb(21, 23, 0);
+    padding: 10px;
+    display: flex;
+    color: aliceblue;
+    height: 100vh;
+}
+
+.child{
+    align-self: center;
+    margin: 0 auto;
+}
+
+#animateImage{
+    align-self: center;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
